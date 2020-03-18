@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>ZFacebook</name>
+    <author>Ivan Komlev</author>
+    <creationDate>June 2018</creationDate>
+    <copyright>Copyright (C) 2010-2018 Ivan Komlev. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>support@joomlaboat.com</authorEmail>
+    <authorUrl>http://www.joomlaboat.com/</authorUrl>
+    <version>1.3.4</version>
+    <description>A module to show facebook List Box.</description>
+    <files>
+        <filename module="mod_zfacebook">mod_zfacebook.php</filename>
+    </files>
+
+    	<!-- Runs on install/uninstall/update; New in 2.5 -->
+	
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+    
+		<field name="href" size="50" type="text" label="Facebook Page URL" description="href - the URL of the Facebook page for this Like Box" />
+		
+		<field name="width" type="text" label="Width" default="340" description="The pixel width of the plugin. Min. is 180 and Max. is 500. Default 340" />
+		<field name="height" type="text" label="Height" default="500" description="The pixel height of the plugin. Min. is 70. Default 500" />
+	
+		<field name="timeline" type="list" label="Timeline Tab" description="Show Timeline Tab" >
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+			
+		</field>
+		
+		<field name="events" type="list" label="Events Tab" description="Show Events Tab" >
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+		
+		<field name="messages" type="list" label="Messages Tab" description="Show Messages Tab" >
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+
+		
+		<field name="hide_cover" type="list" label="Hide cover" description="Hide cover photo in the header" >
+			<option value="1">Hide</option>
+			<option value="0">Show</option>
+		</field>
+		
+		
+		<field name="show_facepile" type="list" label="Show Facepiles" default="1" description="Show profile photos when friends like this" >
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+		
+		<field name="small_header" type="list" label="Small Header" default="0" description="Use the small header instead" >
+			<option value="0">Normal</option>
+			<option value="1">Small</option>
+		</field>
+		
+		
+		<field name="show_posts" type="list" label="Show Posts" default="1" description="" >
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+		
+		
+		
+		<field name="adapt_container_width" type="list" label="Adapt Container Width" default="1" description="Try to fit inside the container width" >
+			<option value="1">Adapt</option>
+			<option value="0">No</option>
+		</field>
+
+		<field name="language" type="list" default="en_US" label="Language" description="" >
+			<option value="en_US">English (US)</option>
+			<option value="en_GB">English (International)</option>
+			<option value="sq_AL">Albanian</option>
+			<option value="ar_DZ">Arabic</option>
+			<option value="be_BY">Belarusian</option>
+			<option value="bg_BG">Bulgarian</option>
+			<option value="ca_ES">Catalan</option>
+			<option value="zh_CN">Chinese</option>
+			<option value="hr_HR">Croatian</option>
+			<option value="cs_CZ">Czech</option>
+			<option value="da_DK">Danish</option>
+			<option value="nl_NL">Dutch</option>
+			<option value="eo_EO">Esperanto</option>
+			<option value="et_EE">Estonian</option>
+			<option value="fi_FI">Finnish</option>
+			<option value="fr_FR">French</option>
+			<option value="es_GL">Galician</option>
+			<option value="de_DE">German</option>
+			<option value="el_GR">Greek</option>
+			<option value="iw_IL">Hebrew</option>
+			<option value="hi_IN">Hindi</option>
+			<option value="hu_HU">Hungarian</option>
+			<option value="is_IS">Icelandic</option>
+			<option value="in_ID">Indonesian</option>
+			<option value="ga_IE">Irish</option>
+			<option value="it_IT">Italian</option>
+			<option value="ja_JP">Japanese</option>
+			<option value="ko_KR">Korean</option>
+			<option value="lv_LV">Latvian</option>
+			<option value="lt_LT">Lithuanian</option>
+			<option value="mk_MK">Macedonian</option>
+			<option value="ms_MY">Malay</option>
+			<option value="mt_MT">Maltese</option>
+			<option value="no_NO">Norwegian</option>
+			<option value="nn_NO">Nynorsk</option>
+			<option value="fa_FA">Persian</option>
+			<option value="pl_PL">Polish</option>
+			<option value="pt_PT">Portuguese</option>
+			<option value="ro_RO">Romanian</option>
+			<option value="ru_RU">Russian</option>
+			<option value="sr_RS">Serbian</option>
+			<option value="sk_SK">Slovak</option>
+			<option value="sl_SI">Slovenian</option>
+			<option value="es_ES">Spanish</option>
+			<option value="sv_SE">Swedish</option>
+			<option value="th_TH">Thai</option>
+			<option value="tr_TR">Turkish</option>
+			<option value="uk_UA">Ukrainian</option>
+			<option value="vi_VN">Vietnamese</option>
+		</field>
+	
+		</fieldset>
+	</fields>
+
+	</config>
+
+	<updateservers>
+		<server type="extension" enabled="1" element="mod_zfacebook" priority="2" name="ZFacebook">https://joomlaboat.com/updates/extensions/zfacebook.xml</server>
+	</updateservers>
+
+
+</extension>
