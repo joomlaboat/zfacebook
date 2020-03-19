@@ -8,7 +8,6 @@
 
 defined('_JEXEC') or die('Restricted access');
 
-
 	$href=$params->get( 'href' );
 	$width=$params->get( 'width' );
 	
@@ -26,13 +25,10 @@ defined('_JEXEC') or die('Restricted access');
 	$adapt_container_width=$params->get( 'adapt_container_width' );
 	$show_posts=$params->get( 'show_posts' );
 	
-	
 	$z_language=$params->get( 'language' );
 			
 	if($z_language=='')
 	  $z_language='en_US';
-	
-
 
 	$apiid='208507969202449';//$params->get( 'apiid' );
   
@@ -76,12 +72,6 @@ $b='
 		.' adapt_container_width="'.($adapt_container_width ? 'true' : 'false').'" data-adapt-container-width="'.($adapt_container_width ? 'true' : 'false').'">'
 		.'</div>'
 		;
-		
-		
-    //$document = JFactory::getDocument();
-    //$document->addCustomTag($h);
-    
-    echo $b;
   
-
-?>
+    echo $b;
+ 
