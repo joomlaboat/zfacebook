@@ -63,8 +63,6 @@
 			<option value="0">Hide</option>
 		</field>
 		
-		
-		
 		<field name="adapt_container_width" type="list" label="Adapt Container Width" default="1" description="Try to fit inside the container width" >
 			<option value="1">Adapt</option>
 			<option value="0">No</option>
@@ -130,6 +128,4 @@
 	<updateservers>
 		<server type="extension" enabled="1" element="mod_zfacebook" priority="2" name="ZFacebook">https://joomlaboat.com/updates/extensions/zfacebook.xml</server>
 	</updateservers>
-
-
 </extension>
